@@ -244,13 +244,15 @@ export function predictRisk(input: {
     { name: "surface age", value: ageScore },
     { name: "reported damage", value: reportScore },
   ].sort((a, b) => b.value - a.value);
+  const top = drivers[0]?.name ?? "traffic density";
+  const second = drivers[1]?.name ?? "rainfall load";
 
   const explanation =
     risk === "High"
-      ? `Failure probability is elevated mainly by ${drivers[0].name} and ${drivers[1].name}. Combined stress on the surface exceeds the safe threshold, so cracking is likely to widen quickly.`
+      ? `Failure probability is elevated mainly by ${top} and ${second}. Combined stress on the surface exceeds the safe threshold, so cracking is likely to widen quickly.`
       : risk === "Medium"
-        ? `Conditions are stable but degrading, driven mostly by ${drivers[0].name}. Small defects are expected to grow if ${drivers[1].name} keeps rising.`
-        : `All monitored factors sit within safe limits, with ${drivers[0].name} contributing most of the small residual stress. No near-term failure signal detected.`;
+        ? `Conditions are stable but degrading, driven mostly by ${top}. Small defects are expected to grow if ${second} keeps rising.`
+        : `All monitored factors sit within safe limits, with ${top} contributing most of the small residual stress. No near-term failure signal detected.`;
 
   const action =
     risk === "High"
