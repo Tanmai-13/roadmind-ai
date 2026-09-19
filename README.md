@@ -1,30 +1,161 @@
-# RoadMind AI
 
-Build RoadMind City, a modern, futuristic smart-city predictive road intelligence platform. Include:
-1. Landing Page with hero headline 'Roads That Think Ahead', predictive road intelligence overview, CTA to explore dashboard, and sections for The Problem, Our Solution, How It Works, Features, and Impact.
-2. Smart Dashboard with status cards (Roads Monitored, High Risk Roads, Traffic Status, Road Health Score, Active AI Alerts), analytics charts, and recent AI predictions.
-3. AI Risk Prediction Page with form inputs (Traffic Density, Rainfall Level, Road Age, Previous Damage Reports) that calculates and displays Risk Level, Prediction Explanation, and Recommended Action.
-4. Interactive Road Map with realistic map view and color-coded risk markers (Green = Safe, Yellow = Medium Risk, Red = High Risk) with inspection cards.
-5. Citizen Report Page to submit reports for potholes, road damage, and traffic issues with status tracking.
-6. Futuristic, polished smart-city design system (clean dark/sleek theme, neon accents, crisp typography, responsive navigation and footer, realistic prototype demo data).
+# 🚦 RoadMind AI — Predictive Road Intelligence Platform
 
-This project was built with [Lovable](https://lovable.dev).
+### Roads That Think Ahead
 
-## Build with Lovable
+## 🏆 Hackathon Project
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/e8e48d98-ee84-46a2-a32f-a81267f3acc7).
+RoadMind AI is a smart-city predictive road intelligence platform designed to support road risk monitoring, maintenance planning, and citizen reporting through a modern digital interface.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## 🚀 Live Demo
 
-## Development
+🔗 **[Visit RoadMind AI](https://road-mind-nexus.lovable.app)**
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Explore the live prototype, including the smart dashboard, risk prediction, interactive road map, and citizen reporting features.
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+## 🎯 Problem Statement
+
+Urban areas face several road-related challenges:
+
+- Potholes and road damage
+- Traffic congestion
+- Rainfall-related road risks
+- Delayed road maintenance
+- Limited centralized reporting systems
+
+These challenges can affect transportation, infrastructure, and public safety.
+
+## 💡 Our Solution
+
+RoadMind AI provides a centralized smart-city platform to:
+
+- Estimate road risk using input parameters
+- Monitor road health indicators
+- Display road risk information
+- Collect citizen road issue reports
+- Support proactive maintenance planning
+
+## ✨ Key Features
+
+### 1. Smart Dashboard
+
+- Roads Monitored
+- High Risk Roads
+- Traffic Status
+- Road Health Score
+- AI Alert Overview
+- Analytics and recent predictions
+
+### 2. AI Risk Prediction
+
+Users can enter:
+
+- Traffic Density
+- Rainfall Level
+- Road Age
+- Previous Damage Reports
+
+The system displays:
+
+- Risk Level
+- Prediction Explanation
+- Recommended Action
+
+**Note:** Prediction outputs should be understood according to the currently implemented prototype logic and are not verified real-world forecasts.
+
+### 3. Interactive Road Map
+
+- Color-coded road risk markers
+- Green: Safe
+- Yellow: Medium Risk
+- Red: High Risk
+- Road inspection cards
+- Demonstration road data
+
+### 4. Citizen Reporting
+
+Citizens can report:
+
+- Potholes
+- Road damage
+- Traffic issues
+
+Reports can be tracked through their status.
+
+## 🛠️ Technologies Used
+
+- React
+- TypeScript
+- JavaScript
+- HTML & CSS
+- Lovable
+- Git & GitHub
+
+*Additional technologies should be listed only if they are implemented in the project.*
+
+## 🔄 How It Works
+
+1. User enters road-related information.
+2. The system processes the input values.
+3. The implemented prediction logic generates a risk category.
+4. The dashboard displays the result and recommended action.
+5. Citizens can submit road-related reports.
+6. Reports are tracked through the platform.
+
+## 🧪 Testing
+
+The application can be tested using different input combinations.
+
+| Test Case | Test Description | Expected Result |
+|---|---|---|
+| TC01 | Enter low traffic and low rainfall | Displays calculated risk |
+| TC02 | Enter high traffic and heavy rainfall | Displays calculated risk |
+| TC03 | Leave required fields empty | Shows input validation |
+| TC04 | Submit a pothole report | Creates a report |
+| TC05 | Open the dashboard | Dashboard loads correctly |
+
+Test results should be marked Pass or Fail only after actual execution.
+
+## 🌍 Potential Impact
+
+RoadMind AI demonstrates how digital platforms can support:
+
+- Proactive road maintenance planning
+- Road issue monitoring
+- Citizen participation
+- Better visibility of infrastructure risks
+- Smart-city decision support
+
+## 🚀 Future Scope
+
+- Integration with a trained machine learning model
+- Real-time traffic and weather data
+- IoT-based road monitoring
+- GPS-enabled reporting
+- Historical road-risk forecasting
+- Municipal system integration
+
+## ⚠️ Current Limitations
+
+This project is a prototype demonstration. Prediction accuracy depends on the implemented logic and available data. Real-world forecasting requires reliable datasets, model training, and proper validation.
+
+## 🔗 Project Links
+
+- **Live Demo:** https://road-mind-nexus.lovable.app
+- **GitHub Repository:** https://github.com/Tanmai-13/roadmind-ai
+
+## 👩‍💻 Developer
+
+**Thirumuru Tanmai**
+
+B.Tech — Artificial Intelligence & Machine Learning
+
+GitHub: https://github.com/Tanmai-13
+
+## 📌 Conclusion
+
+RoadMind AI explores how predictive analytics and digital reporting can contribute to smarter urban road maintenance. The project provides a foundation for future development using real-world data, machine learning, and smart-city technologies.
+
+## 📄 License
+
+This project is developed for educational and hackathon purposes.
